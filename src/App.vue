@@ -29,11 +29,6 @@ export default {
     };
   },
   created() {
-    {
-      /*let promise = this.$http.get("http://localhost:3000/v1/fotos");
-    promise.then(res => res.json()).then(img => (this.img = img));*/
-    }
-
     this.$http
       .get(process.env.VUE_APP_URL_API, {
         headers: {
